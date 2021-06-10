@@ -1,0 +1,6 @@
+<launch>
+    <arg name="map" default="map3.yaml" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find nav_demo)/map/$(arg map)"/>
+</launch>
+
+
